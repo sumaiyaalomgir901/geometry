@@ -85,12 +85,81 @@
                 </div>
               </div>
             </div>
+            <!-- Parallelogram -->
+            <div class="card bg-base-100 w-96 shadow-xl">
+              <figure>
+                <img src="images/parallelogram.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-center">
+                  Parallelogram <span id="parallelogram"></span><sup>2</sup>
+                </h2>
+                <p class="text-center">Area (A) = b X h</p>
+                <div>
+                  <input
+                    id="parallelogram-width"
+                    class="bg-slate-200 w-24 p-2 rounded"
+                    placeholder="b"
+                  />
+                  <span class="mr-5">cm</span>
+                  <input
+                    id="parallelogram-height"
+                    class="bg-slate-200 w-24 p-2 rounded"
+                    placeholder="h"
+                  />
+                  <span>cm</span>
+                </div>
+                <div class="card-actions">
+                  <button
+                    onclick="calculateParallelogramArea()"
+                    class="btn btn-primary w-full text-xl"
+                  >
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Rhombus -->
+            <div class="card bg-base-100 w-96 shadow-xl">
+              <figure>
+                <img src="images/rhombus.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h2 class="card-title text-center">
+                  Rhombus <span id="rhombus"></span><sup>2</sup>
+                </h2>
+                <p class="text-center">Area (A) = 0.5 X d1 X d2</p>
+                <div>
+                  <input
+                    id="diagonal1"
+                    class="bg-slate-200 w-24 p-2 rounded"
+                    placeholder="d1"
+                  />
+                  <span class="mr-5">cm</span>
+                  <input
+                    id="diagonal2"
+                    class="bg-slate-200 w-24 p-2 rounded"
+                    placeholder="d2"
+                  />
+                  <span>cm</span>
+                </div>
+                <div class="card-actions">
+                  <button
+                    onclick="calculateRhombusArea()"
+                    class="btn btn-primary w-full text-xl"
+                  >
+                    Calculate
+                  </button>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="calculate-container"></div>
       </div>
     </main>
 
+    <script src="js/allgeametry.js"></script>
     <script src="js/triangle.js"></script>
     <script src="js/rectangle.js"></script>
   </body>
